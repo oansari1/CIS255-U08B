@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ozzie Ansari U08B</title>
+<link href="styles.css" rel="stylesheet" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!--
+
+201724058 Ozzie Ansari U08B
+
+
+
+-->
+
+<style>
+
+
+</style>
+
+<script></script>
+
+</head>
+<body>
+    <h1>O'Malley's Authentic Italian  Pizzeria</h1>
+    <div>
+        <h2>Build Your Pizza</h2>
+    </div>
+    <!-- Does the form need an ID? -->
+    <form id="thisForm" action="pizzainvoice.php" method="post">
+        <div>
+            <h3>Customer name:</h3>
+            <input type="text" id="customerName" name="customerName" value="" />
+        </div>
+        <div>
+            <h3>Please Select a Pizza Size:</h3>
+            <!-- onclick="calcTotal()?? might have to name each size "size" instead of in select-->
+            <select id="size" name="size" >
+                <option value="">- Select Size -</option>
+                <option value="Small">Small - $9.99</option>
+                <option value="Medium">Medium - $11.99</option>
+                <option value="Large">Large - $468.38</option>
+            </select>
+        </div>
+        <div>
+            <h3>What do you want on your pie?</h3>
+            <input type="checkbox" name="topping" value="Pepperoni"/>Pepperoni + $0.99</br>
+            <input type="checkbox" name="topping" value="Pumpkin"/>Pumpkin + $0.99</br>
+            <input type="checkbox" name="topping" value="Escargot"/>Escargot + $1.99</br>
+            <input type="checkbox" name="topping" value="Gerbils"/>Gerbils + $8.99</br>
+        </div>
+        <input type="SUBMIT" />
+    </form>
+    <br/>
+    <p id="invoice"></p>
+
+
+</body>
+</html>
